@@ -281,7 +281,6 @@ Run the structure prediction with AlphaLink:
 
 ```bash
 run_structure_prediction.py \
-  --input A+B \
   --output_directory predictions/ \
   --num_cycle 3 \
   --num_predictions_per_model 1 \
@@ -298,7 +297,8 @@ run_structure_prediction.py \
   --use_ap_style \
   --use_gpu_relax \
   --protein_delimiter + \
-  --models_to_relax None
+  --models_to_relax None \
+  --input A+B
 ```
 
 **Alternative**:
