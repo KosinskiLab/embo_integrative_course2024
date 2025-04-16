@@ -261,8 +261,11 @@ To visualize the predicted complex:
 
    ```bash
    open /path/to/output/directory/ranked_0.pdb
+   color bfactor palette alphafold
+   alphafold pae #1 palette bluered file predictions/P32349_and_P17890/pae_model_2_multimer_v3_pred_0.json
    ```
-
+4. **Analyse PAE plot**:
+   Do two chains interact according to the PAE plot? How to find the interface?
 ---
 
 ## Step 6: Running AlphaLink with Cross-Linking Data
