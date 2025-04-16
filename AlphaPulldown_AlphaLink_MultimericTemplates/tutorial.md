@@ -310,24 +310,16 @@ Run the structure prediction with AlphaLink:
 
 ```bash
 run_structure_prediction.py \
-  --output_directory predictions/ \
-  --num_cycle 3 \
-  --num_predictions_per_model 1 \
-  --data_directory /scratch/AlphaFold_DBs/2.3.2/ \
-  --alphalink_weights /scratch/AlphaFold_DBs/2.3.2/alphalink_weights/AlphaLink-Multimer_SDA_v3.pt \
-  --features_directory features_mmseqs2/ \
-  --pair_msa \
-  --nomsa_depth_scan \
-  --nomultimeric_template \
-  --crosslinks crosslinks.pkl.gz \
-  --fold_backend alphalink \
-  --nocompress_result_pickles \
-  --noremove_result_pickles \
-  --use_ap_style \
-  --use_gpu_relax \
-  --protein_delimiter + \
-  --models_to_relax None \
-  --input A+B
+--output_directory predictions_new/ \
+--num_cycle 3 \
+--num_predictions_per_model 1 \
+--data_directory /scratch/AlphaFold_DBs/2.3.2/alphalink_weights/AlphaLink-Multimer_SDA_v3.pt \
+--features_directory features_mmseqs2/ \
+--crosslinks crosslinks.pkl.gz \
+--fold_backend alphalink \
+--use_ap_style \
+--use_gpu_relax \
+--input A+B
 ```
 
 **Alternative**:
